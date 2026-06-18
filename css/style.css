@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --cor-padrao: #012d6e;
     --cor-barra: #ff0000;
     --fundo-secao: rgb(252, 252, 252);
 }
 
-*{
+* {
     padding: 0;
     border: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     min-height: 100vh;
     background-color: var(--fundo-secao);
 }
@@ -25,18 +27,28 @@ main {
     font-family: "Roboto", sans-serif;
 }
 
-.esquerda, .experiencias, .educacao, .item{
+@media(max-width: 880px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
+.esquerda,
+.experiencias,
+.educacao,
+.item {
     background-color: var(--fundo-secao);
     border-radius: 10px;
     overflow: hidden;
 }
 
-.experiencias, .educacao {
+.experiencias,
+.educacao {
     padding: 10px;
 }
 
 .esquerda {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .direita {
@@ -45,7 +57,8 @@ main {
     flex-direction: column;
 }
 
-.data, i {
+.data,
+i {
     color: var(--cor-padrao);
 }
 
@@ -66,10 +79,12 @@ ul {
 .imagem-esquerda h1 {
     position: absolute;
     bottom: 0;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
-.pessoal, .habilidades, .linguagens {
+.pessoal,
+.habilidades,
+.linguagens {
     padding: 16px;
     line-height: 20px;
 }
@@ -92,16 +107,18 @@ ul {
 .nome-item {
     font-weight: bolder;
 }
-footer{
+
+footer {
     color: white;
     background-color: black;
     padding: 1.5rem;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-footer a{
+
+footer a {
     text-decoration: none;
     color: var(--cor-padrao);
     padding: 5px;
@@ -110,7 +127,7 @@ footer a{
     border-radius: 4px;
 }
 
-footer a :hover{
+footer a :hover {
     color: white;
     border: 2px solid white;
 }
