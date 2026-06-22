@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --cor-padrao: #012d6e;
-    --cor-barra: #ff0000;
-    --fundo-secao: rgb(252, 252, 252);
+    --cor-padrao: #351f06;
+    --cor-barra: #ffffff;
+    --fundo-secao: rgb(148, 148, 148);
 }
 
 * {
